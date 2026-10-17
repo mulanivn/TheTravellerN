@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Explore The Traveller's complete collection of domestic, international and group tour packages.">
+  <title>Tour Packages | The Traveller</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body data-page="packages">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="navbar-slot"></div>
+  <header class="page-hero page-hero--packages">
+    <video class="hero-video" src="../assets/videos/himalaya.mp4" autoplay loop muted playsinline aria-hidden="true"></video>
+    <div class="hero-overlay"></div>
+    <div class="container page-hero-content" data-aos="fade-up"><span class="eyebrow">CURATED JOURNEYS</span>
+      <h1>Explore all tour packages</h1>
+      <p>Find a route that fits your pace, budget, and travel style.</p>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="section-padding section-muted">
+      <div class="container">
+        <div class="filter-toolbar mb-4">
+          <div><label for="packageSearch">Search packages</label><input class="form-control" id="packageSearch"
+              placeholder="Destination or package name"></div>
+          <div><label for="packageCategory">Category</label><select id="packageCategory" class="form-select">
+              <option value="all">All categories</option>
+              <option value="domestic">Domestic</option>
+              <option value="international">International</option>
+              <option value="group">Group</option>
+            </select></div>
+          <div><label for="packageTheme">Theme</label><select id="packageTheme" class="form-select">
+              <option value="all">All themes</option>
+              <option value="family">Family</option>
+              <option value="honeymoon">Honeymoon</option>
+              <option value="adventure">Adventure</option>
+              <option value="senior">Senior-friendly</option>
+            </select></div>
+        </div>
+        <div class="row g-4" id="allPackageGrid"></div>
+        <p class="empty-state d-none" id="allPackageEmpty">No packages match your search.</p>
+      </div>
+    </section>
+  </main>
+  <div id="footer-slot"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+   AOS.init();
+  </script>
+</body>
+
+</html>
